@@ -1,0 +1,12 @@
+cd "C:\Users\HP\Desktop\C++\Weather"
+git config --global user.name sushant
+git config --global user.mail sushantjambwale@gmail.com
+touch .gitignore
+git init
+git add .
+git commit  -m "Initial Commit"
+git status # optional 
+	ssh-keygen -t rsa -b 4096 -c "sushantjambwale@gmail.com"
+tail <path to id_rsa.pub> # add this key to your github key in ssh and gsp
+git remote add origing <our key>
+git push origin master
